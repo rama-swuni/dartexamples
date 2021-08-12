@@ -31,7 +31,7 @@ void addBookMixedDefaultValue(String name, {double price=39.44}){
   booksIOwn[name]=price;
   print(booksIOwn);
 }
-//Making a named argument as required
+//Making a named argument as optional
 void addBookMixedOptional(String name, [double price]){
   booksIOwn[name]=price;
   print(booksIOwn);
