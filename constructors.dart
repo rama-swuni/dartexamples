@@ -1,6 +1,6 @@
 void main() {
  
-  Book book1 = new Book("Harry Potter and the Prisoner of Azkaban");
+  Book book1 =  new Book("Harry Potter and the Prisoner of Azkaban");
   print(book1.getName());
   print(book1.name);
 
@@ -19,16 +19,32 @@ void main() {
 //   }
 // }
 
+
 class Book{
   //public attribute to store the name of the book
   String name;
- //The constructor can be written using "Syntactic Sugar" as such
-  //using positional parameter construct
-  Book(this.name);
+  //Constructor
+  Book(String bookName){
+    this.name = bookName;
+  }
   String getName(){
     return this.name;
   }
 }
+
+
+// class Book{
+//   //public attribute to store the name of the book
+//   String name;
+//  //The constructor can be written using "Syntactic Sugar" as such
+//   //using positional parameter construct
+//   Book(this.name);
+//   String getName(){
+//     return this.name;
+//   }
+// }
+
+
 
 // class Book{
 //   //public attribute to store the name of the book
@@ -52,25 +68,17 @@ class Book{
 //   }
 // }
 
+
+
 // class Book{
 //   //public attribute to store the name of the book
 //   String name;
-//   //Constructor
-//   Book(String bookName){
-//     this.name = bookName;
-//   }
-//   String getName(){
-//     return this.name;
-//   }
-// }
+//  //The named constructor can be written using "Syntactic Sugar" as such
+//   //using positional parameter construct
+//   Book.newBook(this.name);
+//   //you need to call this as follows
+//   //Book book1 =  Book.newBook("Harry Potter and the Prisoner of Azkaban");
 
-// class Book{
-//   //private attribute to store the name of the book
-//   String name;
-//   //Constructor
-//   Book(String bookName){
-//     this.name = bookName;
-//   }
 //   String getName(){
 //     return this.name;
 //   }
